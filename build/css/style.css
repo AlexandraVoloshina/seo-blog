@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'myPT';
+    src: url('font/PTS55F-webfont.eot');
+    src: url('font/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/PTS55F-webfont.woff') format('woff'),
+         url('font/PTS55F-webfont.ttf') format('truetype'),
+         url('font/PTS55F-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'myPTNarrow';
+    src: url('font/PTN57F-webfont.eot');
+    src: url('font/PTN57F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/PTN57F-webfont.woff') format('woff'),
+         url('font/PTN57F-webfont.ttf') format('truetype'),
+         url('font/PTN57F-webfont.svg#pt_sans_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	font-family: "myPT", "trebuchet ms", sans-serif;
+	font-size: 15px;
+	background: #dfe2e3;
+	line-height: 18px;
+}
+.narrow{
+	font-family: "myPTNarrow", "trebuchet ms", sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+}
+/* Оформление левого меню */
+.left_side{
+	background: #00605f;
+	width: 300px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 5;
+}
+.logo_text{
+	padding: 20px 10px;
+	color:#ffffff;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: normal;
+	font-family: myPTNarrow;
+	text-align: center;
+}
+.logo_text a{
+	display: inline-block;
+}
+.logo_text span{
+	color:#fc9c06;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 0 10px 18px;
+	text-align: center;
+	display: block;
+}
+.left_menu{
+	margin-top: 30px;
+}
+.left_menu ul{
+	display: block;
+	list-style-type: none;
+}
+.left_menu li{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.left_menu li a{
+	display: block;
+	line-height: 30px;
+	font-size: 18px;
+	font-family: myPTNarrow;
+	color:#ffffff;
+	text-decoration: none;
+	padding-left: 60px;
+}
+.left_menu li a:hover{
+	background: #343e41;
+}
+.left_menu li.focused{
+	color:#fff;
+	background-color:#41c7c2;
+}
+.social_img{
+	text-align: center;
+}
+.social_img a{
+	display: inline-block;
+	margin: 0 10px;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+}
+.social_img a:hover{
+	opacity: 0.7;
+}
+.tw_icon{
+	background: url("../images/social.png") top left no-repeat;
+}
+.go_icon{
+	background: url("../images/social.png") top right no-repeat;
+}
+.left_swap{
+	display: none;/* По умолчанию блок не виден,
+	он показывается, если срабатывает медиазапрос */
+	position: fixed;
+	width: 50px;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 6;
+	background: url(../images/swipe.png) #00605f center 20px no-repeat;
+}
+
+
+/* Стили основного блока */
+.wrapper{
+	position: relative;
+	background: #ffffff;
+	min-height: 200%;
+	min-width: 400px;
+	max-width: 1200px;
+	padding-left: 300px;
+	padding-right: 0px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.wrapper a{
+	color:#576a6f;
+}
+.wrapper a:hover{
+	color:#1d282b;
+}
+.wrapper_top{
+	padding: 10px 40px 10px;
+}
+.wrapper_top h1{
+    line-height: 30px;
+    text-align: center;
+    margin: 60px 0;
+}
+.foto{
+    opacity:1;
+    background: url("../images/foto-project.jpg") center center no-repeat;
+    float: left;
+    width:150px;
+    height:150px;
+    background-size: contain;
+}
+.text_block{
+	overflow: hidden;
+	color:#4a4a4a;
+	font-size: 18px;
+	line-height: 24px;
+	min-height: 200px;
+	background: url("../images/hr.png") left bottom repeat-x;
+	padding: 10px 40px 10px;
+}
+.row-text{
+    text-align: left;
+    width: 90%;
+    padding: 2%;
+
+}
+.row-text h3{
+ padding: 10px;
+}
+.text-img{
+    display: inline-block;
+    float: left;
+}
+.text-img img{
+    width: 300px;
+	padding: 5px;
+}
+.row-add{
+	padding: 50px;
+	float: left;
+}
+.comment {
+	font-size: 10px;
+	background-color: #fefefe;
+	line-height: 12px;
+	padding: 10px;
+}
+
+
+/* Оформление нижних блоков */
+.footer{
+	clear: both;
+	overflow: hidden;
+	text-align: left;
+	padding: 20px 40px;
+	background-color: #fcfcfc;
+}
+.footer_block{
+	vertical-align: top;
+	display: inline-block;
+	text-align: left;
+	width: 27%;
+	padding: 2%;
+	font-size: 13px;
+}
+.footer_block img{
+	display: block;
+	margin: 10px auto;
+	max-width: 100%;
+}
+
+.btn-add {
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	padding: .8em 1em calc(.8em + 3px);
+	border-radius: 3px;
+	background: rgb(64,199,129);
+	box-shadow: 0 -3px rgb(53,167,110) inset;
+	transition: 0.2s;
+}
+.btn-add:hover { background: rgb(53, 167, 110); }
+.btn-add:active {
+	background: rgb(33,147,90);
+	box-shadow: 0 3px rgb(33,147,90) inset;
+}
+/* Переопределение стилей в медиазапросах */
+@media only screen and (max-width:800px){
+ 	.left_side{
+ 		display: none;
+	}
+
+	.left_swap{
+		display: block;
+	}
+	.wrapper{
+		padding-left: 50px;
+	}
+}
+@media only screen and (max-width:720px){
+	.footer_block{
+		display: block;
+		width: 96%;
+	}
+}
